@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class CarpetPrice {
+	public static void main(String[] args) {
+	Scanner x=new Scanner(System.in);
+	System.out.print("enter lenght in inches  :  ");
+	int l=x.nextInt();
+	System.out.print("enter breath in inches  :  ");
+	int b=x.nextInt();
+	int L=l/12;
+	int B=b/12;
+	int A=L*B;
+	System.out.print("enter price per square foot  :  ");
+	int p=x.nextInt();
+	System.out.print("enter discount percentage  :  ");
+	int d=x.nextInt();
+	int SP=A*p;
+	double dp=SP*d/100;
+	double dsp=SP-dp;
+	System.out.print("this is the price after discount  :  " + dsp);	
+	}
+}
